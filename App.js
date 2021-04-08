@@ -31,6 +31,7 @@ export default function App() {
     <View style={styles.container}>
       <View style= {styles.itemContainer}>
         <View style= {styles.leftContainer}>
+          {/* 画像の追加 */}
         <Image
         style={{ width: 100, height: 100}}
         source={{
