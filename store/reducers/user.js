@@ -9,12 +9,12 @@ const reducer = (state = initialState, action) => {
       return {
         // oldstateのclipsにnewAction上書きする感じ
         ...state,
-        clips: [...state.clips, action.clips],
+        clips: [...state.clips, action.clip],
       };
     case 'DELETE_CLIP':
       return {
         ...state,
-        clips: state.clips.filter((clip) => clip.url != action.clip.url),
+        clips: state.clips.filter((clip) => clip.url !== action.clip.url),
       };
     default:
       return state;
